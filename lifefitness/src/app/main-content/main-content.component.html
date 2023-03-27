@@ -1,0 +1,37 @@
+<div class ="side-right">
+<div class="main-container-header">Software Updates <br/> <span class="small-text">System/Software</span></div>
+<div class="main-container">
+
+  
+
+  <table id = "equipments">
+  
+    <tr class = "trd" *ngFor="let data of dataList">
+      <div class="line"> 
+      <td class ="width">
+        <div class="eq"></div>
+        {{ data.type}} <br/>
+        <div class=".small-text">{{ data.serial_no}} </div>
+      </td>
+      <td class ="width">
+        {{ data.screen_type}} 
+      </td>
+      <td class ="width">
+        <div *ngIf="data.update.status === 'SUCCESS'; else elseBlock">
+          <div class="success">Update successful</div>
+          <div class="default">Connected</div>
+        </div>
+        <ng-template #elseBlock>
+          <div class="error"> Update on {{ data.update.date}} was unsuccessful</div>
+          <div class="default"> Not connected</div>
+        </ng-template>
+      </td>
+    </div>
+  </tr>
+
+</table>
+</div>
+<div class="footer">
+  <app-footer></app-footer>
+</div>
+</div>

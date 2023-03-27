@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-size: 13px;
+    }
+
+    .main {
+    width: 100%;
+    min-height: 750px;
+    height: 100%;
+    position: absolute;
+    top:70px;
+    }
+
+    h1 {
+    width: 100%;
+    height:100px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    float: left;
+    padding: 0px;
+    left: 0px;
+    }
+
+    .side-left{
+    width: 15%;
+    height: 100%;
+    background-color: #dae4f2;
+    float:left; 
+    }
+
+    .side-right{
+    width: 85%;
+    min-height:750px;
+    height: 100%;
+    background-color: #edf1f9;
+    float:left;
+    overflow-y: auto;
+    }
+
+
+    .page_right{
+    width:530px;
+    float:right;
+    }
+
+    .footer{
+    bottom:0px;
+    height:30px;
+    width:100%;
+    position: fixed;
+    background-color: #272B35;
+    float:left;
+    }
+
+    .error{
+    color: red;
+    }
+
+    .success{
+    color: green;
+    }
+
+    .default{
+    color: grey;
+    margin-top:3px;
+    }
+
+    table{
+    width:100%;
+    height:100%;
+    }
+
+    .equipments{
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    .line{
+    border-bottom: 1px solid #DCDCDC;
+    }
+
+    .width{
+    width:200px;
+    height:50px;
+    padding:25px;
+    }
+
+    .logo{
+        background-image: url("./assets/images/logo.png");
+        width:102px;
+        height: 32px;
+        margin:18px 0px 0px 60px;
+        background-repeat: no-repeat;
+        float:left;
+    }
+
+    .header{
+        height:200px;
+    }
+
+    .user{
+        background-image: url("./assets/images/avatar.png");
+        width:102px;
+        height: 32px;
+        right:0px;
+        margin:18px 0px 0px 60px;
+        background-repeat: no-repeat;
+        float:right;
+    }
+
+    .menu{
+        text-align: center;
+        margin-top: 20px;
+        border-bottom: 1px solid #DCDCDC;
+        height:35px;
+        color: #3b4246;
+    }
+
+    .main-container-header{
+        color: #3b4246;
+        font-size: 20px;
+        margin: 20px 20px 20px 40px;
+    }
+
+    .small-text{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .main-container{
+        background-color: white;
+        margin: 30px;
+        border-radius: 2px;
+        color: #3b4246;
+        width:100%;
+        min-width: 400px;
+    }
+
+    .eq{
+        background-image: url("./assets/images/Treadmill.png");
+        width:75px;
+        height:50px;
+        background-repeat: no-repeat;
+        float:left;
+    }
+
+    .footer-text{
+        padding:8px;
+        color: grey;
+        margin-left:5px;
+    }
+
+    @media only screen and (max-width: 415px){
+        .side-left{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 415px){
+        .side-left{
+            display: block;
+        }
+    }
+
